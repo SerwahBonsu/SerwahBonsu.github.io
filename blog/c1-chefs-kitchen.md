@@ -10,6 +10,6 @@ DBC feels very thorough. I have had my share of higher education, this is the fi
 
 As far as the DBC culture, I feel like I am totally a cook in the code kitchen. I am not going to be a passive consumer of code. But at the same time, I am wondering how to manage competing interests -- my startup and learning how to code effectively. I believe that I have what it takes to perservere and to identify what I need to be successful in the educational arena and the startup arena.
 
-I am grateful to be on this journey.
+I am grateful to be on this journey!
 
 
