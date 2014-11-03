@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+    <title>Rose Afriyie</title>
+  </head>
+
+<header>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/stylesheet.css"/>
+      <h1>ROSE AFRIYIE</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="http://www.mrelief.com">mRelief</a></li>
+          <li><a href="blog-index.html">pRose&amp;Code Blog</a></li>
+          <li><a href="https://www.facebook.com/rose.s.afriyie">Facebook</a></li>
+          <li><a href="https://twitter.com/roseserwah">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <body>
+  <section id="content">
+  <h1>Enumerable Methods</h1>
+
+  <h2>A Brief post on Map! an Why It Matters</h2>
+
+  <h3>11/2/2014</h3>
+  <div class="center">
+  	<img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/10/collections_enum.jpg" />
+
+  </div>
+    <p>Enumerable methods are defined in <a href="http://ruby-doc.org/core-2.1.4/Enumerable.html">Ruby Docs</a> as "a mixin provides collection classes with several traversal and searching methods, and with the ability to sort." Rubyist Robert Quails <a href="http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/">discusses a mixin</a> as follows:
+    <blockquote>
+     In most languages, code sharing is only possible through inheritance, and inheritance is generally limited to one parent class. In addition to classes, Ruby has modules which are containers for methods and constants. If you want to write code once and share it between a bunch of unrelated classes, you can put it in modules to be “mixed in” with your classes. 
+     </blockquote></p> 
+    <p> In a recent exercise at Dev Bootcamp I reviewed one enumerable method called map!. map! is a destructive method that takes an enumerable object for each element, in this case an element of an array, and replaces the element with the value returned from the block. Check out how I used it here: </p>
+
+  <xmp>
+  def my_array_modification_method(source, thing_to_modify)
+  source.map! do |x|
+    (x.is_a?(Integer)) ? x + thing_to_modify : x
+  end
+	</xmp>
+
+	<p>In the above example I used map! to check and see whether integers were in an array. If they were, the method above enables me to add some number to those integers and change the original array. It's a concept that I hope to explore more but it is definitely a useful one when you want to look through a list of items.</p>
+	
+  </section>
+  </body>
+</html>
+
+
+
