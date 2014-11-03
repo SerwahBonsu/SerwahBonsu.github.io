@@ -25,8 +25,52 @@
         </ul>
       </nav>
     </header>
-    
+  
      <body>
+
+  <section id="content">
+  <h1>Enumerable Methods</h1>
+
+  <h2>A Brief post on Map! an Why It Matters</h2>
+
+  <h3>11/2/2014</h3>
+  <div class="center">
+    <img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/10/collections_enum.jpg" />
+
+  </div>
+    <p>Enumerable methods are defined in <a href="http://ruby-doc.org/core-2.1.4/Enumerable.html">Ruby Docs</a> as "a mixin provides collection classes with several traversal and searching methods, and with the ability to sort." Rubyist Robert Quails <a href="http://www.sitepoint.com/guide-ruby-collections-iii-enumerable-enumerator/">discusses a mixin</a> as follows:
+    <blockquote>
+     In most languages, code sharing is only possible through inheritance, and inheritance is generally limited to one parent class. In addition to classes, Ruby has modules which are containers for methods and constants. If you want to write code once and share it between a bunch of unrelated classes, you can put it in modules to be “mixed in” with your classes. 
+     </blockquote></p> 
+    <p> In a recent exercise at Dev Bootcamp I reviewed one enumerable method called map!. map! is a destructive method that takes an enumerable object for each element, in this case an element of an array, and replaces the element with the value returned from the block. Check out how I used it here: </p>
+
+  <xmp>
+  def my_array_modification_method(source, thing_to_modify)
+  source.map! do |x|
+    (x.is_a?(Integer)) ? x + thing_to_modify : x
+  end
+  </xmp>
+
+  <p>In the above example I used map! to check and see whether integers were in an array. If they were, the method above enables me to add some number to those integers and change the original array. It's a concept that I hope to explore more but it is definitely a useful one when you want to look through a list of items.</p>
+  
+  </section>
+<br/>
+<br/>
+    <section id="content">
+  <h1>The Key To Inclusive Software Solutions</h1>
+
+  <h2>Why learning entrepreneurship is just as important as learning how to code</h2>
+
+  <h3>11/2/14</h3>
+  <div class="center">
+    <img src="http://pushinteractions.collegemobileinc.netdna-cdn.com/wp-content/uploads/2013/01/cult-of-mac-money-hd.jpg" />
+
+  </div>
+    <p>In the contemporary digital era, there is a huge push for learning how to code. Large tech companies are increasingly investing in women and people of color to learn programming languages. Yet, learning how to code is only half of the equation if we want to have software solutions applied to challenges that affect low-income people and underrepresented groups. Another critical investment we must make is in equipping women and people of color with the skills needed to be entrepreneurs.</p> 
+    <p> The founding members of any startup will ultimately line the rank of officer positions and higher level management. Priorities for any tech company -- which are mostly top-down -- are often set by these decision makers. This includes calls about whether to take up challenges for lower-income groups and these decisions are often not made by diverse teams. </p> <p><a href="http://pushinteractions.collegemobileinc.netdna-cdn.com/wp-content/uploads/2013/01/cult-of-mac-money-hd.jpg">Data crunched</a> on 20 Tech companies in 2013, was very revealing about this dearth of diverse decision makers. A look at 5 large tech companies shows no woman in an officer or high level management role at 3 out of 5 companies -- the remaining 2 had none. For African Americans there were no more than 4 in this same category with two companies having none.</p>
+    <p>Some encouraging models in this arena include <a href="http://bushjob01.chicagobooth.edu/Facultycourse08/CourseProfDetaila.aspx?course_ns=36110&section_id=65034&ac_year=2014&selAcademicYear=2014&src=FacultyDetail2.aspx">recent attempts</a> by Business Schools to teach web development. This is important because business schools are traditionally more diverse than medicine and law programs allowing for some ground to be gained. Inversely, however, coding schools should also be more overt about offering skills on sustaining a startup. This can be achieved by creating stronger bonds with accelerators. In this way, they provide students with curriculum that equips them to be as efficient with code as they are with budgets, plans to establish private and public partnerships and overall management.</p>
+    <p>This is how we build inclusive software solutions of the future. </p>
+  </section>
   <h1> Fork in the Code?
   </h1>
 
